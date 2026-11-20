@@ -2,7 +2,7 @@
     <div class="flex justify-center items-center h-screen">
         <div class="text-center">
             <h1 class="font-bold text-7xl text-blue-700">
-                Welcome To Compatibility Test
+                Welcome To CoupleCompatibility
             </h1>
 
             <div class="flex justify-center items-center mt-10">
