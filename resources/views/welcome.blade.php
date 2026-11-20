@@ -5,11 +5,11 @@
                 Welcome To CoupleCompatibility
             </h1>
 
-            <div class="flex justify-center items-center mt-10">
+            <a href="{{ route('game.step_1') }}" class="flex justify-center items-center mt-10">
                 <button class="mx-auto cursor-pointer bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
                     Test Your Compatibility
                 </button>
-            </div>
+            </a>
         </div>
     </div>
 </x-layouts>
