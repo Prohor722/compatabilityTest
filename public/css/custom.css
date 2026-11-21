@@ -8,6 +8,13 @@
   --font-display:'Bodoni Moda','Didot','Times New Roman',serif;
   --font-body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
+:root{
+    --bg:#1A0916; --glow:#3A1230; --surface:#27112334; --surface2:#2F1429;
+    --ink:#FBE8EE; --muted:#CBA4B7; --line:#552B4B;
+    --rose:#FF7AA2; --rose-strong:#FF93B3; --on-rose:#2A0A1A; --rose-soft:#4A1B3A;
+    --plum:#C58BF0; --gold:#EDBF6C; --gold-soft:#41311A; --gold-line:#8A6A2E;
+    --shadow:rgba(0,0,0,.6); --lens:#FFC2D6; color-scheme:dark;
+  }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#1A0916; --glow:#3A1230; --surface:#27112334; --surface2:#2F1429;
@@ -27,6 +34,7 @@
 *{box-sizing:border-box}
 body{
   background:var(--bg);
+  /* background-color:purple !important; */
   background-image:radial-gradient(900px 520px at 85% -8%,var(--glow),transparent 70%),radial-gradient(700px 480px at -10% 100%,var(--glow),transparent 70%);
   background-repeat:no-repeat;
   color:var(--ink); 
@@ -49,7 +57,7 @@ p{margin:0}
 .sub{color:var(--muted);margin-top:8px;max-width:60ch}
 .eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);font-weight:600}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4.5vw,34px);box-shadow:0 24px 60px -36px var(--shadow);display:flex;flex-direction:column;gap:18px;min-width:0}
-:root:not([data-theme="dark"]) .panel{background:#fff}
+/* :root:not([data-theme="dark"]) .panel{background:#fff} */
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:#2A1327}}
 :root[data-theme="dark"] .panel{background:#2A1327}
 .hero{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding-top:6px;position:relative}
