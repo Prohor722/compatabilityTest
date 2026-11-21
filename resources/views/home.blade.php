@@ -43,7 +43,7 @@
     
                 <div>
                     <p class="eyebrow">For two people in love</p>
-                    <h1>How well do you two <em>really</em> match?</h1>
+                    <h1 class="home-h1">How well do you two <em>really</em> match?</h1>
                     <p class="lede">Answer the same questions on your own. See your score together. Then reveal what each
                         of you secretly said.</p>
                     <div class="btns"><button class="game-start-btn btn primary" data-act="start">Test compatibility <svg
