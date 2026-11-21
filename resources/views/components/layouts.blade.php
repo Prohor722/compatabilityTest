@@ -15,6 +15,6 @@
 </body>
 
 <footer>
-    <script src="{{ asset('js/custom.js') }}"></script>
+    {{-- <script src="{{ asset('js/custom.js') }}"></script> --}}
 </footer>
 </html>

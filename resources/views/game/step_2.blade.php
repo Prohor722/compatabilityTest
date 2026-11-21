@@ -1,40 +1,33 @@
 <x-layouts>
-    <div class="flex justify-center items-center h-screen">
-        <from action="{{ Route('game.step_2') }}" method="POST">
-            @csrf
-            <button class="mb-10 bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded" 
-            onclick="addQuestion()">Add Question</button>
-            <div id="questions-container"></div>
-            <button type="submit" class="mx-auto cursor-pointer bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
-                Skip/Continue
-            </button>
-        </from>
+    <div class="panel">
+        <div>
+            <h2>Add your own questions</h2>
+            <p class="sub">Ask what you really want to know. qe can add some too when they join.</p>
+        </div>
+        <div class="note"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 8v5M12 16.5v.5" stroke-linecap="round"></path>
+            </svg>
+            <div><b>Every question must have a Yes or No answer.</b><br>Good: "Do you like staying in on Fridays?" Not
+                good: "What is your dream holiday?"</div>
+        </div>
+        <form id="fQ" novalidate="">
+            <div class="addrow">
+                <div class="field"><label for="qin">Your question</label><input type="text" id="qin"
+                        maxlength="140" autocomplete="off" placeholder="Do you want a dog someday?"></div><button
+                    class="btn primary" type="submit" style="margin-top:26px">Add</button>
+            </div>
+            <p class="warn" id="warn" aria-live="polite"></p>
+            <p class="err" id="err" role="alert"></p>
+        </form>
+        <div>
+            <p class="count" id="qcount">0 of 10 added</p>
+            <div id="qlist" style="margin-top:8px">
+                <p class="empty">No questions of your own yet. We will add romantic ones for you, at least 10.</p>
+            </div>
+        </div><label class="switch" for="maybe"><input type="checkbox" id="maybe" checked=""><span><b>Add a
+                    Maybe option to every question</b><small>You will both see Yes, Maybe and No.</small></span></label>
+        <div class="btns"><button class="btn ghost" data-act="toNames">Back</button><button class="btn primary"
+                data-act="toCount">Continue</button></div>
     </div>
-
-    <script>
-        var n = 1;
-
-        function addQuestion() {
-            const questionsContainer = document.getElementById('questions-container');
-            const questionDiv = document.createElement('div');
-            questionDiv.classList.add('mb-4');
-
-            const questionLabel = document.createElement('label');
-            questionLabel.setAttribute('for', 'question');
-            questionLabel.classList.add('block', 'text-gray-700', 'font-bold', 'mb-2');
-            questionLabel.textContent = 'Enter Your Question ' + n + ':';
-
-            const questionInput = document.createElement('input');
-            questionInput.type = 'text';
-            questionInput.id =  'question-' + n;
-            questionInput.name = 'questions[]';
-            questionInput.classList.add('border', 'border-gray-300', 'rounded', 'px-3', 'py-2', 'mb-4', 'w-full');
-            questionInput.required = true;
-
-            questionDiv.appendChild(questionLabel);
-            questionDiv.appendChild(questionInput);
-            questionsContainer.appendChild(questionDiv);
-            n++;
-        }
-    </script>
 </x-layouts>
