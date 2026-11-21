@@ -21,3 +21,7 @@ Route::get('/step-2', function () {
 Route::get('/step-3', function () {
     return view('game.step_3');
 })->name('game.step_3');
+
+Route::get('/step-4', function () {
+    return view('game.step_4');
+})->name('game.step_4');
