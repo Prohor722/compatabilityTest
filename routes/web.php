@@ -27,5 +27,10 @@ Route::get('/step-4', function () {
 })->name('game.step_4');
 
 Route::get('/join-page', function () {
-    return view('game.join_page');
+    return view('game.join_page_home');
 })->name('game.join_page');
+
+Route::get('/join-page-1', function () {
+    return view('game.join_page_1');
+})->name('game.join_page_1');
+
