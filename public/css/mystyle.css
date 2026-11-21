@@ -1,0 +1,58 @@
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+
+.lede {
+    margin-bottom: 30px;
+}
+
+#heart {
+    height: 16px;
+}
+
+#heart {
+    /* fill: #000; */
+    transform-origin: center;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+        fill: #fbe0e5;
+    }
+
+    15% {
+        transform: scale(1.3);
+        fill: #fcaaba;
+    }
+
+    30% {
+        transform: scale(1);
+        fill: #ff4d9a;
+    }
+
+    45% {
+        transform: scale(1.25);
+        fill: #ff378e;
+    }
+
+    60% {
+        transform: scale(1);
+        fill: #ff2483;
+    }
+
+    100% {
+        transform: scale(1);
+        fill: #fd0571;
+    }
+}
+
+.game-start-btn:hover #heart {
+    fill: yellow;
+    transition: fill 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
