@@ -46,3 +46,6 @@ Route::get('/last-question', function () {
     return view('game.last_question_page');
 })->name('game.last_question_page');
 
+Route::get('/waiting-to-finish', function () {
+    return view('game.waiting_to_finish_page');
+})->name('game.waiting_to_finish');
