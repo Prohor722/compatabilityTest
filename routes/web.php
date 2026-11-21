@@ -25,3 +25,7 @@ Route::get('/step-3', function () {
 Route::get('/step-4', function () {
     return view('game.step_4');
 })->name('game.step_4');
+
+Route::get('/join-page', function () {
+    return view('game.join_page');
+})->name('game.join_page');
