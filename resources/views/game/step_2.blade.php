@@ -21,9 +21,14 @@
             <p class="err" id="err" role="alert"></p>
         </form>
         <div>
-            <p class="count" id="qcount">0 of 10 added</p>
+            <p class="count" id="qcount">2 of 10 added</p>
             <div id="qlist" style="margin-top:8px">
-                <p class="empty">No questions of your own yet. We will add romantic ones for you, at least 10.</p>
+                <ul class="qs">
+                    <li><span>aaaaaa jdcdkas ncjksdncds?</span><button class="rm" data-act="rmq" data-i="0"
+                            aria-label="Remove question: aaaaaa jdcdkas ncjksdncds?">×</button></li>
+                    <li><span>ababa djn njkkdcnsd?</span><button class="rm" data-act="rmq" data-i="1"
+                            aria-label="Remove question: ababa djn njkkdcnsd?">×</button></li>
+                </ul>
             </div>
         </div><label class="switch" for="maybe"><input type="checkbox" id="maybe" checked=""><span><b>Add a
                     Maybe option to every question</b><small>You will both see Yes, Maybe and No.</small></span></label>
