@@ -49,3 +49,19 @@ Route::get('/last-question', function () {
 Route::get('/waiting-to-finish', function () {
     return view('game.waiting_to_finish_page');
 })->name('game.waiting_to_finish');
+
+Route::get('/finish_page', function () {
+    return view('game.finish_page');
+})->name('game.finish_page');
+
+Route::get('/half-reveal', function () {
+    return view('game.half_reveal_page');
+})->name('game.half_reveal');
+
+Route::get('/wait-to-reveal', function () {
+    return view('game.wait_to_reveal_page');
+})->name('game.wait_to_reveal');
+
+Route::get('/full-reveal', function () {
+    return view('game.full_reveal_page');
+})->name('game.full_reveal');
