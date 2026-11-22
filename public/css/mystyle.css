@@ -5,6 +5,10 @@
     gap: 0rem;
 }
 
+.top {
+    height: 60px;
+}
+
 .lede {
     margin-bottom: 30px;
 }

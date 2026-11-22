@@ -822,7 +822,10 @@ input[type="range"] {
 }
 /* Mobile View */
 @media (max-width: 580px) {
-    .pair {
+  .top {
+    height: 50px !important;
+  }
+  .pair {
         grid-template-columns: 1fr;
     }
     .btn {

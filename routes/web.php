@@ -11,19 +11,19 @@ Route::get('/test', function () {
 });
 
 Route::get('/step-1', function () {
-    return view('game.step_1');
+    return view('game.user1.step_1');
 })->name('game.step_1');
 
 Route::get('/step-2', function () {
-    return view('game.step_2');
+    return view('game.user1.step_2');
 })->name('game.step_2');
 
 Route::get('/step-3', function () {
-    return view('game.step_3');
+    return view('game.user1.step_3');
 })->name('game.step_3');
 
 Route::get('/step-4', function () {
-    return view('game.step_4');
+    return view('game.user1.step_4');
 })->name('game.step_4');
 
 Route::get('/join-page', function () {
@@ -31,11 +31,11 @@ Route::get('/join-page', function () {
 })->name('game.join_page');
 
 Route::get('/join-page-1', function () {
-    return view('game.join_page_1');
+    return view('game.user2.join_page_1');
 })->name('game.join_page_1');
 
 Route::get('/join-page-2', function () {
-    return view('game.join_page_2');
+    return view('game.user2.join_page_2');
 })->name('game.join_page_2');
 
 Route::get('/question', function () {
