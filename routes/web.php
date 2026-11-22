@@ -10,8 +10,9 @@ Route::get('/test', function () {
     return "Welcome To Test Page";
 });
 
-Route::get('/step-1', function () {
-    return view('game.user1.step_1');
+Route::get('/step-1/', function() {
+    $id = 1;
+    return view('game.user1.step_1', compact('id'));
 })->name('game.step_1');
 
 Route::get('/step-2', function () {
