@@ -1,12 +1,7 @@
-<x-layouts>
+@extends('game.user1.user1_layout')
 
-    <div id="main">
-        <ol class="steps" aria-label="Progress">
-            <li class="on" aria-current="step">Names</li>
-            <li class="">Questions</li>
-            <li class="">Count</li>
-            <li class="">Invite</li>
-        </ol>
+@section('user1-contents')
+    
         <div class="panel">
             <div>
                 <h2>Who is playing?</h2>
@@ -26,4 +21,4 @@
         </div>
     </div>
 
-</x-layouts>
+@endsection
