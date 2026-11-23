@@ -1,4 +1,7 @@
-<x-layouts>
+@extends('game.user1.user1_layout')
+
+@section('user1-contents')
+
     <div class="panel">
         <div>
             <h2>How many questions?</h2>
@@ -16,7 +19,9 @@
         <p class="err" id="err" role="alert"></p>
 
         <div class="btns">
-            <button class="btn ghost" data-act="toQuestions">Back</button>
+            <a href="{{ route('game.step_2') }}">
+                <button class="btn ghost" data-act="toQuestions">Back</button>
+            </a>
 
             <a href="{{ route('game.step_4') }}">
                 <button class="btn ghost game-start-btn" data-act="create" id="createBtn">Start the game <svg viewBox="0 0 24 24"
@@ -29,4 +34,5 @@
             </a>
         </div>
     </div>
-</x-layouts>
+
+@endsection

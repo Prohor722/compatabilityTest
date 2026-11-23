@@ -49,7 +49,9 @@
             </span>
         </label>
         <div class="btns">
-            <button class="btn ghost" data-act="toNames">Back</button>
+            <a href="{{ route('game.step_1') }}">
+                <button class="btn ghost" data-act="toNames">Back</button>
+            </a>
             <a href="{{ route('game.step_3') }}">
                 <button class="btn primary" data-act="toCount">Continue</button>
             </a>
