@@ -31,15 +31,18 @@ Route::get('/step-4', function () {
 })->name('game.step_4');
 
 Route::get('/join-page', function () {
-    return view('game.join_page_home');
+    $id = 1;
+    return view('game.join_page_home', compact('id'));
 })->name('game.join_page');
 
 Route::get('/join-page-1', function () {
-    return view('game.user2.join_page_1');
+    $id = 2;
+    return view('game.user2.join_page_1', compact('id'));
 })->name('game.join_page_1');
 
 Route::get('/join-page-2', function () {
-    return view('game.user2.join_page_2');
+    $id = 3;
+    return view('game.user2.join_page_2', compact('id'));
 })->name('game.join_page_2');
 
 Route::get('/question', function () {
