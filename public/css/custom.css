@@ -578,6 +578,12 @@ input[type="range"] {
     align-items: center;
     animation: rise 0.35s ease both;
 }
+
+#main {
+    width: 60%;
+    margin: 0 auto;
+}
+
 @keyframes rise {
     from {
         opacity: 0;
@@ -820,13 +826,23 @@ input[type="range"] {
     .home-h1 {
         font-size: 40px;
     }
+
+    #main {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 /* Mobile View */
 @media (max-width: 580px) {
-  .top {
-    height: 50px !important;
-  }
-  .pair {
+    #main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top {
+        height: 50px !important;
+    }
+    .pair {
         grid-template-columns: 1fr;
     }
     .btn {
@@ -847,7 +863,7 @@ input[type="range"] {
     }
 
     .how {
-      margin-top: 26px;
+        margin-top: 26px;
     }
 }
 @media (prefers-reduced-motion: reduce) {
