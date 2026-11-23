@@ -26,15 +26,33 @@
             <p class="count" id="qcount">2 of 10 added</p>
             <div id="qlist" style="margin-top:8px">
                 <ul class="qs">
-                    <li><span>aaaaaa jdcdkas ncjksdncds?</span><button class="rm" data-act="rmq" data-i="0"
-                            aria-label="Remove question: aaaaaa jdcdkas ncjksdncds?">×</button></li>
-                    <li><span>ababa djn njkkdcnsd?</span><button class="rm" data-act="rmq" data-i="1"
-                            aria-label="Remove question: ababa djn njkkdcnsd?">×</button></li>
+                    <li>
+                        <span>aaaaaa jdcdkas ncjksdncds?</span>
+                        <button class="rm" data-act="rmq" data-i="0"
+                            aria-label="Remove question: aaaaaa jdcdkas ncjksdncds?">×
+                        </button>
+                    </li>
+                    <li>
+                        <span>ababa djn njkkdcnsd?</span>
+                        <button class="rm" data-act="rmq" data-i="1"
+                            aria-label="Remove question: ababa djn njkkdcnsd?">×
+                        </button>
+                    </li>
                 </ul>
             </div>
-        </div><label class="switch" for="maybe"><input type="checkbox" id="maybe" checked=""><span><b>Add a
-                    Maybe option to every question</b><small>You will both see Yes, Maybe and No.</small></span></label>
-        <div class="btns"><button class="btn ghost" data-act="toNames">Back</button><button class="btn primary"
-                data-act="toCount">Continue</button></div>
+        </div>
+        <label class="switch" for="maybe">
+            <input type="checkbox" id="maybe" checked="">
+            <span>
+                <b>Add a Maybe option to every question</b>
+                <small>You will both see Yes, Maybe and No.</small>
+            </span>
+        </label>
+        <div class="btns">
+            <button class="btn ghost" data-act="toNames">Back</button>
+            <a href="{{ route('game.step_3') }}">
+                <button class="btn primary" data-act="toCount">Continue</button>
+            </a>
+        </div>
     </div>
 @endsection
