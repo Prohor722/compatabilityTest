@@ -828,14 +828,14 @@ input[type="range"] {
         font-size: 40px;
     }
 
-    #main {
+    .main {
         width: 90%;
         margin: 0 auto;
     }
 }
 /* Mobile View */
 @media (max-width: 580px) {
-    #main {
+    .main {
         width: 100%;
         margin: 0 auto;
     }

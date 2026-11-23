@@ -30,18 +30,18 @@ Route::get('/step-4', function () {
     return view('game.user1.step_4', compact('id'));
 })->name('game.step_4');
 
-Route::get('/join-page', function () {
-    $id = 1;
-    return view('game.join_page_home', compact('id'));
-})->name('game.join_page');
+// Route::get('/join-page', function () {
+//     $id = 1;
+//     return view('game.join_page_home', compact('id'));
+// })->name('game.join_page');
 
 Route::get('/join-page-1', function () {
-    $id = 2;
+    $id = 1;
     return view('game.user2.join_page_1', compact('id'));
 })->name('game.join_page_1');
 
 Route::get('/join-page-2', function () {
-    $id = 3;
+    $id = 2;
     return view('game.user2.join_page_2', compact('id'));
 })->name('game.join_page_2');
 

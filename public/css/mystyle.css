@@ -69,6 +69,10 @@
     transition-delay: 0.2s;
 }
 
+.add-ques-section {
+    margin-bottom: 20px;
+}
+
 
 /* Tab View  */
 @media (max-width: 850px) and (min-width: 581px) {

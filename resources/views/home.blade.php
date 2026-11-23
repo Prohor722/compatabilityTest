@@ -57,7 +57,7 @@
                             </button>
                         </a>
                         
-                        <a href="{{ route('game.join_page') }}">
+                        <a href="{{ route('game.join_page_1') }}">
                             <button class="btn ghost" data-act="joinview">I have an invite code</button>
                         </a>
                     </div>
