@@ -14,8 +14,12 @@
                     <div class="field"><label for="n2">Your partner's name</label><input type="text"
                             id="n2" maxlength="24" autocomplete="off" value=""></div>
                     <p class="err" id="err" role="alert"></p>
-                    <div class="btns"><button class="btn ghost" type="button" data-act="home">Back</button><button
-                            class="btn primary" type="submit">Continue</button></div>
+                    <div class="btns">
+                        <a href="{{ route('game.step_2') }}">
+                            <button class="btn ghost" type="button" data-act="home">Back</button><button
+                                class="btn primary" type="submit">Continue</button>
+                        </a>
+                    </div>
                 </div>
             </form>
         </div>

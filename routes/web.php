@@ -16,15 +16,18 @@ Route::get('/step-1/', function() {
 })->name('game.step_1');
 
 Route::get('/step-2', function () {
-    return view('game.user1.step_2');
+    $id = 2;
+    return view('game.user1.step_2', compact('id'));
 })->name('game.step_2');
 
 Route::get('/step-3', function () {
-    return view('game.user1.step_3');
+    $id = 3;
+    return view('game.user1.step_3', compact('id'));
 })->name('game.step_3');
 
 Route::get('/step-4', function () {
-    return view('game.user1.step_4');
+    $id = 4;
+    return view('game.user1.step_4', compact('id'));
 })->name('game.step_4');
 
 Route::get('/join-page', function () {

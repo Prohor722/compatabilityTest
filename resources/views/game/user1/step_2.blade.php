@@ -1,4 +1,6 @@
-<x-layouts>
+@extends('game.user1.user1_layout')
+
+@section('user1-contents')
     <div class="panel">
         <div>
             <h2>Add your own questions</h2>
@@ -35,4 +37,4 @@
         <div class="btns"><button class="btn ghost" data-act="toNames">Back</button><button class="btn primary"
                 data-act="toCount">Continue</button></div>
     </div>
-</x-layouts>
+@endsection
