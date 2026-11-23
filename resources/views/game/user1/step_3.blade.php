@@ -24,7 +24,7 @@
             </a>
 
             <a href="{{ route('game.step_4') }}">
-                <button class="btn ghost game-start-btn" data-act="create" id="createBtn">Start the game <svg viewBox="0 0 24 24"
+                <button class="btn ghost game-start-btn-2" data-act="create" id="createBtn">Start the game <svg viewBox="0 0 24 24"
                         aria-hidden="true" id="heart">
                         <path
                             d="M12 21s-7.5-4.6-9.6-9.3C1 8.4 3 5 6.3 5c2 0 3.5 1.1 4.2 2.4h3C14.2 6.1 15.7 5 17.7 5 21 5 23 8.4 21.6 11.7 19.5 16.4 12 21 12 21z">

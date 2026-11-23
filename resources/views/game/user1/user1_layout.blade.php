@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <header class="top"><button class="brand" data-act="home"
-            aria-label="CoupleCompatibility home">Couple<i>Compatibility</i></button><span id="roomchip"></span>
+    <header class="top">
+        <a href="{{ route('home') }}" class="logo" aria-label="CoupleCompatibility home">
+            <button class="brand" data-act="home" aria-label="CoupleCompatibility home">
+                Couple<i>Compatibility</i>
+            </button>
+        </a>
+        <span id="roomchip"></span>
     </header>
     <div id="main">
         @include('game.user1.topbar')

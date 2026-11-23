@@ -23,12 +23,12 @@
     animation: heartbeat 1s infinite;
 }
 
-.game-start-btn{
-  background-color: #5e515140 !important;
+.game-start-btn-2{
+  background-color: #8f50764f !important;
 }
 
-.game-start-btn:hover{
-  background-color: #5e515117 !important;
+.game-start-btn-2:hover{
+  background-color: #4124358b !important;
 }
 
 @keyframes heartbeat {
@@ -67,4 +67,23 @@
     fill: yellow;
     transition: fill 0.5s ease-in-out;
     transition-delay: 0.2s;
+}
+
+
+/* Tab View  */
+@media (max-width: 850px) and (min-width: 581px) {
+    body {
+        padding-bottom: 20px;
+    }
+}
+/* Mobile View */
+@media (max-width: 580px) {
+    body {
+        padding-bottom: 50px;
+    }
+    .home-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

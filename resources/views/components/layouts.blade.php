@@ -12,10 +12,15 @@
 </head>
 
 <body>
-    <header class="top"><button class="brand" data-act="home"
-            aria-label="CoupleCompatibility home">Couple<i>Compatibility</i></button><span id="roomchip"></span>
+    <header class="top">
+        <a href="{{ route('home') }}">
+            <button class="brand" data-act="home" aria-label="CoupleCompatibility home">
+                Couple<i>Compatibility</i>
+            </button>
+        </a>
+            <span id="roomchip"></span>
     </header>
-    <main id="main">
+    <main id="">
         {{ $slot }}
     </main>
 </body>
