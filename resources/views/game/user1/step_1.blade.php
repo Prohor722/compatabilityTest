@@ -15,9 +15,9 @@
                             id="n2" maxlength="24" autocomplete="off" value=""></div>
                     <p class="err" id="err" role="alert"></p>
                     <div class="btns">
+                        <button class="btn ghost" type="button" data-act="home">Back</button>
                         <a href="{{ route('game.step_2') }}">
-                            <button class="btn ghost" type="button" data-act="home">Back</button><button
-                                class="btn primary" type="submit">Continue</button>
+                            <button class="btn primary" type="button">Continue</button>
                         </a>
                     </div>
                 </div>
