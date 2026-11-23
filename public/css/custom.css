@@ -312,6 +312,7 @@ p {
     color: var(--ink);
     border-color: var(--line);
 }
+
 .btn.ghost:hover {
     border-color: var(--rose);
 }

@@ -23,6 +23,14 @@
     animation: heartbeat 1s infinite;
 }
 
+.game-start-btn{
+  background-color: #5e515140 !important;
+}
+
+.game-start-btn:hover{
+  background-color: #5e515117 !important;
+}
+
 @keyframes heartbeat {
     0% {
         transform: scale(1);
