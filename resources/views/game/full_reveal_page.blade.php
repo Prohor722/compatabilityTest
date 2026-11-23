@@ -1,5 +1,5 @@
 <x-layouts>
-    <main id="main">
+    <main class="main">
         <div class="panel">
             <div class="score">
                 <p class="eyebrow">qq &amp; qejh</p>

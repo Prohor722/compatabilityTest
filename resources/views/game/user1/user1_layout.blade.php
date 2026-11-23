@@ -19,7 +19,7 @@
         </a>
         <span id="roomchip"></span>
     </header>
-    <div id="main">
+    <div class="main">
         @include('game.user1.topbar')
         @yield('user1-contents')
     </div>

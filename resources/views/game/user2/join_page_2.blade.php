@@ -1,5 +1,5 @@
 <x-layouts>
-    <main id="main">
+    <main class="main">
         <ol class="steps" aria-label="Progress">
             <li class="done">Join</li>
             <li class="on" aria-current="step">Questions</li>

@@ -1,5 +1,5 @@
 <x-layouts>
-    <div class="panel">
+    <div class="panel main">
         <div>
             <h2>Join your partner</h2>
             <p class="sub">Enter the code they sent you.</p>
