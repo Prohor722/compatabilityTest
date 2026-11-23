@@ -1,10 +1,7 @@
-<x-layouts>
+@extends('game.user2.user2_layout')
+
+@section('user2-contents')
     <div class="panel">
-        <ol class="steps" aria-label="Progress">
-            <li class="on" aria-current="step">Join</li>
-            <li class="">Questions</li>
-            <li class="">Begin</li>
-        </ol>
         <div>
             <h2>Hello! <em>qq</em> invited you</h2>
             <p class="sub">Is this how you want your name to appear?</p>
@@ -19,4 +16,4 @@
             </div>
         </form>
     </div>
-</x-layouts>
+@endsection
