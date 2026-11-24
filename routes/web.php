@@ -36,7 +36,12 @@ Route::get('/step-3', function () {
 
 Route::get('/step-4', function () {
     $id = 4;
-    return view('game.user1.step_4', compact('id'));
+    $partner2 = 'Partner-2';
+    $code = '2JHRHM';
+    $url = "11https://7fb67ff9-62d9-42a5-a774-f6ee6ce817fd.frame.claudeusercontent.com/_f/1795249574-2c4a/#join-VJHRHM";
+    $message = "Join me on CoupleCompatibility, cc. Open https://7fb67ff9-62d9-42a5-a774-f6ee6ce817fd.frame.claudeusercontent.com/_f/1795249574-2c4a/#join-4TQHKV and enter the code 4TQHKV.";
+
+    return view('game.user1.step_4', compact('id', 'partner2', 'code', 'url', 'message'));
 })->name('game.step_4');
 
 // Route::get('/join-page', function () {
