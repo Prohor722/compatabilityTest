@@ -51,7 +51,9 @@ Route::get('/step-4', function () {
 
 Route::get('/join-page-1', function () {
     $id = 1;
-    return view('game.user2.join_page_1', compact('id'));
+    $partner1  = 'Partner-1';
+    $partner2 = 'Partner-2';
+    return view('game.user2.join_page_1', compact('id','partner1', 'partner2'));
 })->name('game.join_page_1');
 
 Route::get('/join-page-2', function () {
