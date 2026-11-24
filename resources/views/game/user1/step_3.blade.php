@@ -5,7 +5,7 @@
     <div class="panel add-ques-section">
         <div>
             <h2>How many questions?</h2>
-            <p class="sub">You and qe will answer the same set. The minimum is your own questions plus 10 from us.</p>
+            <p class="sub">You and {{ $partner2 }} will answer the same set. The minimum is your own questions plus 10 from us.</p>
         </div>
         <div>
             <div class="bigcount" id="tot">15</div>

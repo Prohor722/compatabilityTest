@@ -23,12 +23,15 @@ Route::get('/step-2', function () {
         'Do you prefer money over love?',
     ];
     $partner2 = 'Partner-2';
+
     return view('game.user1.step_2', compact('id', 'questions', 'partner2'));
 })->name('game.step_2');
 
 Route::get('/step-3', function () {
     $id = 3;
-    return view('game.user1.step_3', compact('id'));
+    $partner2 = 'Partner-2';
+
+    return view('game.user1.step_3', compact('id', 'partner2'));
 })->name('game.step_3');
 
 Route::get('/step-4', function () {
