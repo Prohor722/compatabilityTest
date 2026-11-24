@@ -1,10 +1,10 @@
 @extends('game.user1.user1_layout')
 
 @section('user1-contents')
-    <div class="panel">
+    <div class="panel add-ques-section">
         <div>
             <h2>Add your own questions</h2>
-            <p class="sub">Ask what you really want to know. qe can add some too when they join.</p>
+            <p class="sub">Ask what you really want to know. {{ $partner2 }} can add some too when they join.</p>
         </div>
         <div class="note"><svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9"></circle>
@@ -23,21 +23,19 @@
             <p class="err" id="err" role="alert"></p>
         </form>
         <div>
-            <p class="count" id="qcount">2 of 10 added</p>
+            @if(count($questions) > 0)
+                <p class="count" id="qcount">{{ count($questions) }} question's added</p>
+            @endif
             <div id="qlist" style="margin-top:8px">
                 <ul class="qs">
-                    <li>
-                        <span>aaaaaa jdcdkas ncjksdncds?</span>
-                        <button class="rm" data-act="rmq" data-i="0"
-                            aria-label="Remove question: aaaaaa jdcdkas ncjksdncds?">×
-                        </button>
-                    </li>
-                    <li>
-                        <span>ababa djn njkkdcnsd?</span>
-                        <button class="rm" data-act="rmq" data-i="1"
-                            aria-label="Remove question: ababa djn njkkdcnsd?">×
-                        </button>
-                    </li>
+                    @foreach ($questions as $question)
+                        <li>
+                            <span>{{ $question }}</span>
+                            <button class="rm" data-act="rmq" data-i="0"
+                                aria-label="Remove question: {{ $question }}">×
+                            </button>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

@@ -17,7 +17,13 @@ Route::get('/step-1/', function() {
 
 Route::get('/step-2', function () {
     $id = 2;
-    return view('game.user1.step_2', compact('id'));
+    $questions = [
+        'Do you like to travel?',
+        'Would you put me in your top most priority list?',
+        'Do you prefer money over love?',
+    ];
+    $partner2 = 'Partner-2';
+    return view('game.user1.step_2', compact('id', 'questions', 'partner2'));
 })->name('game.step_2');
 
 Route::get('/step-3', function () {

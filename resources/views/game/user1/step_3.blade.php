@@ -2,7 +2,7 @@
 
 @section('user1-contents')
 
-    <div class="panel">
+    <div class="panel add-ques-section">
         <div>
             <h2>How many questions?</h2>
             <p class="sub">You and qe will answer the same set. The minimum is your own questions plus 10 from us.</p>
