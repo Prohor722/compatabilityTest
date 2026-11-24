@@ -3,8 +3,8 @@
 @section('user2-contents')
     <div class="panel add-ques-section">
         <div>
-            <h2>qe, add your questions</h2>
-            <p class="sub">qq is waiting for you. Every question will include a Maybe option.</p>
+            <h2>{{ $partner2 }}, add your questions</h2>
+            <p class="sub">{{ $partner1 }} is waiting for you. Every question will include a Maybe option.</p>
         </div>
         <div class="note"><svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9"></circle>

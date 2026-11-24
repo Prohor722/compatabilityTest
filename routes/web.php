@@ -58,7 +58,9 @@ Route::get('/join-page-1', function () {
 
 Route::get('/join-page-2', function () {
     $id = 2;
-    return view('game.user2.join_page_2', compact('id'));
+    $partner1 = 'Partner-1';
+    $partner2 = 'Partner-2';
+    return view('game.user2.join_page_2', compact('id', 'partner1', 'partner2'));
 })->name('game.join_page_2');
 
 Route::get('/question', function () {
