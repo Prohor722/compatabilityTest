@@ -96,7 +96,17 @@ Route::get('/finish_page', function () {
 })->name('game.finish_page');
 
 Route::get('/half-reveal', function () {
-    return view('game.questions.half_reveal_page');
+    $user = 'Partner-1';
+    $partner = 'Partner-2';
+    $quesAns = [
+        'Do you like to travel?'=> 'Yes',
+        'Would you put me in your top most priority list?'=> 'Maybe',
+        'Do you prefer money over love?'=> 'No',
+    ];
+    $matchPercentage = 87;
+    $status = 'Wonderfully matched';
+    return view('game.questions.half_reveal_page', 
+    compact('user', 'partner', 'quesAns', 'matchPercentage', 'status'));
 })->name('game.half_reveal');
 
 Route::get('/wait-to-reveal', function () {

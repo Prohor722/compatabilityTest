@@ -77,6 +77,21 @@
     margin: 20px 0;
 }
 
+.Yes {
+    background-color: rgb(26, 153, 26) !important;
+    color: rgb(50, 50, 50) !important;
+}
+
+.No {
+    background-color: rgb(204, 0, 0) !important;
+    color: white !important;
+}
+
+.Maybe {
+    background-color: rgb(255, 204, 0) !important;
+    color: rgb(50, 50, 50) !important;
+}
+
 
 /* Tab View  */
 @media (max-width: 850px) and (min-width: 581px) {
