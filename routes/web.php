@@ -64,11 +64,19 @@ Route::get('/join-page-2', function () {
 })->name('game.join_page_2');
 
 Route::get('/question', function () {
-    return view('game.question_page');
+    $partner1 = 'Partner-1';    
+    $partner2 = 'Partner-2';
+    $questions = [
+        'Do you like to travel?',
+        'Would you put me in your top most priority list?',
+        'Do you prefer money over love?',
+    ];
+    $maybe = false;
+    return view('game.questions.question_page', compact('partner1', 'partner2', 'questions', 'maybe'));
 })->name('game.question_page');
 
 Route::get('/last-question', function () {
-    return view('game.last_question_page');
+    return view('game.questions.last_question_page');
 })->name('game.last_question_page');
 
 Route::get('/waiting-to-finish', function () {
@@ -80,7 +88,7 @@ Route::get('/finish_page', function () {
 })->name('game.finish_page');
 
 Route::get('/half-reveal', function () {
-    return view('game.half_reveal_page');
+    return view('game.questions.half_reveal_page');
 })->name('game.half_reveal');
 
 Route::get('/wait-to-reveal', function () {
@@ -88,5 +96,5 @@ Route::get('/wait-to-reveal', function () {
 })->name('game.wait_to_reveal');
 
 Route::get('/full-reveal', function () {
-    return view('game.full_reveal_page');
+    return view('game.questions.full_reveal_page');
 })->name('game.full_reveal');
