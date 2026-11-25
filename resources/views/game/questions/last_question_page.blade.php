@@ -1,4 +1,5 @@
-<x-layouts>
+@extends('game.questions.question_page_layout')
+@section('question-contents')
     <div class="panel">
         <div class="prog"><span id="pn">Question 15 of 15</span><span>{{ $user }}</span></div>
         <div class="bar"><i id="pb" style="width: 93.3333%;"></i></div>
@@ -20,7 +21,7 @@
         </div>
         <div class="btns" style="justify-content:space-between">
             <button class="btn link" data-act="back" id="backBtn" style="visibility: visible;">Previous question</button>
-            <span class="count">qq cannot see your answers yet.</span>
+            <span class="count">{{ $partner }} cannot see your answers yet.</span>
         </div>
     </div>
-</x-layouts>
+@endsection
