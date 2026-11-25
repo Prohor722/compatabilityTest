@@ -76,7 +76,15 @@ Route::get('/question', function () {
 })->name('game.question_page');
 
 Route::get('/last-question', function () {
-    return view('game.questions.last_question_page');
+    $user = 'Partner-1';
+    $partner = 'Partner-2';
+    $questions = [
+        'Do you like to travel?',
+        'Would you put me in your top most priority list?',
+        'Do you prefer money over love?',
+    ];
+    $maybe = false;
+    return view('game.questions.last_question_page', compact('user', 'partner', 'questions', 'maybe'));
 })->name('game.last_question_page');
 
 Route::get('/waiting-to-finish', function () {

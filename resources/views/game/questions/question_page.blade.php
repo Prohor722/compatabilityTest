@@ -20,7 +20,7 @@
             <button class="ans no" data-act="ans" data-v="no">No</button>
             </div>
         <div class="btns" style="justify-content:space-between"><button class="btn link" data-act="back"
-                id="backBtn" style="visibility: hidden;">Previous question</button><span class="count">{{ $partner2 }} cannot see
+                id="backBtn" style="visibility: hidden;">Previous question</button><span class="count">{{ $partner }} cannot see
                 your answers yet.</span></div>
     </div>
 @endsection
