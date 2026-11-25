@@ -73,6 +73,10 @@
     margin-bottom: 20px;
 }
 
+.rlist {
+    margin: 20px 0;
+}
+
 
 /* Tab View  */
 @media (max-width: 850px) and (min-width: 581px) {
