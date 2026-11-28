@@ -26,6 +26,11 @@
                                 Hidden
                             </span>
                         </div>
+
+                        <div class="who">
+                            <small>{{ $user }}</small>
+                            <span class="chip no {{ $answer }}">{{ $answer  }}</span>
+                        </div>
                     </div>
                 </article>
             @endforeach
