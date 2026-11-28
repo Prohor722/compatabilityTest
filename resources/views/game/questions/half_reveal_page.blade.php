@@ -14,6 +14,7 @@
                 <article class="rq">
                     <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline"><small>From
                             us</small></div>
+                    <h3>{{ $question }}</h3>
                     <div class="pair">
                         <div class="who">
                             <small>{{ $partner }}</small>
